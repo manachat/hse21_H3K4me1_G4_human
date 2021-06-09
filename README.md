@@ -41,3 +41,8 @@ cat *_filtered.bed | sort -k1,1 -k2,2n > H3K4me1_HCT116_merged_hg19.bed
 ```
 zcat *.gz | sort -k1,1 -k2,2n | bedtools merge > G4_merged.bed
 ```
+
+### Строим графики для участков (G4_description.R)  
+![alt text](pictures/len_hist_G4.png)
+
+![alt text](pictures/G4_plotAnnoPie.png)
