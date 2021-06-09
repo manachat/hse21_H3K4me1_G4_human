@@ -1,5 +1,5 @@
 
-setwd("~/programming/bio_project/src/")
+setwd("/home/vfilonov/programming/bio_project/src/")
 
 library(ggplot2)
 library(dplyr)
@@ -13,7 +13,8 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 #install.packages("openssl")
 
 #BiocManager::install("ChIPseeker")
-
+#BiocManager::install("clusterProfiler")
+#BiocManager::install("TxDb.Hsapiens.UCSC.hg19.knownGene")
 #install.packages("ChIPseeker")
 
 
