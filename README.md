@@ -46,3 +46,12 @@ zcat *.gz | sort -k1,1 -k2,2n | bedtools merge > G4_merged.bed
 ![alt text](pictures/len_hist_G4.png)
 
 ![alt text](pictures/G4_plotAnnoPie.png)
+
+### Создаем пересечение вторичной структуры с метками  
+```
+bedtools intersect -a G4_merged.bed -b H3K4me1_HCT116_merged_hg19.bed > H3K4me1_HCT116_intersect_G4.bed
+```
+### Cтроим графики распределения длин и расположения аннотированных участков (G4_intersection.R)  
+![alt text](pictures/len_hist_G4_intersection.png)
+
+![alt text](pictures/G4_intersection_plotAnnoPie.png)
