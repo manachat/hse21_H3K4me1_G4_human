@@ -8,8 +8,15 @@ library(tibble)
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
+#install.packages("curl")
+#install.packages("xml2")
+#install.packages("openssl")
 
-BiocManager::install("ChIPseeker")
+#BiocManager::install("ChIPseeker")
+
+#install.packages("ChIPseeker")
+
+
 
 DATA_DIR <- '../data/'
 OUT_DIR <- '../pictures/'
