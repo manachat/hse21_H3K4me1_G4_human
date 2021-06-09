@@ -60,5 +60,7 @@ bedtools intersect -a G4_merged.bed -b H3K4me1_HCT116_merged_hg19.bed > H3K4me1_
 ![alt text](pictures/intersected_regions.png)  
 
 ### Аннотируем пересечения вторичных структур с ближайшими генами. (ChIPpeakAnno.R)  
-### Получаем 10005 аннотированных участков, из которых уникальных 5334
+Получаем 10005 аннотированных участков, из которых уникальными являются 5334. (wc -l)  
 
+### Проведем GO анализ в pantherDB. Результаты сохраним в файл pantherdb_GO_analysis.txt. Результаты 10 самых значимых процессов
+![alt text](pictures/panther_GO.png)  
