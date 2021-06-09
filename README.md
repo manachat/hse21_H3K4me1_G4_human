@@ -56,6 +56,6 @@ bedtools intersect -a G4_merged.bed -b H3K4me1_HCT116_merged_hg19.bed > H3K4me1_
 
 ![alt text](pictures/G4_intersection_plotAnnoPie.png)
 
-### Находим в геномном браузере участки пересечения с генами chr1:874,190-879,216 (https://genome-euro.ucsc.edu/cgi-bin/hgCustom?hgsid=267145012_3RX7wizIGmdMnaiDhGhpA0IhQlsW)
+### Находим в геномном браузере участки пересечения с генами chr1:874,190-879,216 (session.txt)
 ![alt text](pictures/intersected_regions.png)  
 
