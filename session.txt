@@ -1,0 +1,15 @@
+track visibility=dense name="ENCFF699ABD"  description="H3K4me1_HCT116_ENCFF699ABD_hg19_filtered.bed"
+https://raw.githubusercontent.com/manachat/hse21_H3K4me1_G4_human/master/data/H3K4me1_HCT116_ENCFF699ABD_hg19_filtered.bed
+
+track visibility=dense name="ENCFF931YSQ"  description="H3K4me1_HCT116_ENCFF931YSQ_hg19_filtered.bed"
+https://raw.githubusercontent.com/manachat/hse21_H3K4me1_G4_human/master/data/H3K4me1_HCT116_ENCFF931YSQ_hg19_filtered.bed
+
+track visibility=dense name="ChIP_merge"  color=50,50,200   description="H3K4me1_HCT116_merged_hg19.bed"
+https://raw.githubusercontent.com/manachat/hse21_H3K4me1_G4_human/master/data/H3K4me1_HCT116_merged_hg19.bed
+
+track visibility=dense name="G4"  color=0,200,0  description="G4"
+https://raw.githubusercontent.com/manachat/hse21_H3K4me1_G4_human/master/data/G4_merged.bed
+
+track visibility=dense name="intersect_with_G4"  color=200,0,0  description="H3K4me1_HCT116_intersect_G4.bed"
+https://raw.githubusercontent.com/manachat/hse21_H3K4me1_G4_human/master/data/H3K4me1_HCT116_intersect_G4.bed
+
