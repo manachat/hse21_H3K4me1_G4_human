@@ -36,3 +36,8 @@ cat *_filtered.bed | sort -k1,1 -k2,2n > H3K4me1_HCT116_merged_hg19.bed
 ```
 ### Проверяем объединение в геномном браузере
 ![alt text](pictures/marks_union.png)
+
+### Создаем единый файл с квадруплексами
+```
+zcat *.gz | sort -k1,1 -k2,2n | bedtools merge > G4_merged.bed
+```
