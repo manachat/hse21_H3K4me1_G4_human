@@ -5,6 +5,11 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 library(tibble)
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+
+BiocManager::install("ChIPseeker")
 
 DATA_DIR <- '../data/'
 OUT_DIR <- '../pictures/'
