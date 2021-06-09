@@ -13,7 +13,7 @@ for (pref in c(prefix_1, prefix_2)) {
       geom_histogram() +
       ggtitle(paste0(pref, ver), subtitle = sprintf('Number of peaks = %s', nrow(bed_df))) +
       theme_bw()
-    ggsave(paste0('len_hist_', paste0(pref, ver), '.pdf'), path = OUT_DIR)
+    ggsave(paste0('len_hist_', paste0(pref, ver), '.png'), path = OUT_DIR)
     
   }
 }
@@ -30,5 +30,7 @@ for (pref in c(prefix_1, prefix_2)) {
     geom_histogram() +
     ggtitle(paste0(pref, '_hg19_filtered'), subtitle = sprintf('Number of peaks = %s', nrow(bed_df))) +
     theme_bw()
-  ggsave(paste0('len_hist_', paste0(pref, '_hg19'), '_filtered.pdf'), path = OUT_DIR)
+  ggsave(paste0('len_hist_', paste0(pref, '_hg19'), '_filtered.png'), path = OUT_DIR)
 }
+
+dev.off()
