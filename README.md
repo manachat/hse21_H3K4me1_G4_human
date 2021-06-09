@@ -59,3 +59,6 @@ bedtools intersect -a G4_merged.bed -b H3K4me1_HCT116_merged_hg19.bed > H3K4me1_
 ### Находим в геномном браузере участки пересечения с генами chr1:874,190-879,216 (session.txt)
 ![alt text](pictures/intersected_regions.png)  
 
+### Аннотируем пересечения вторичных структур с ближайшими генами. (ChIPpeakAnno.R)  
+### Получаем 10005 аннотированных участков, из которых уникальных 5334
+
