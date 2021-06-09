@@ -21,10 +21,16 @@ cat ../prefix.txt | xargs -tI{} liftOver {}_hg38.bed hg38ToHg19.over.chain.gz {}
 ![alt text](pictures/len_hist_H3K4me1_HCT116_ENCFF931YSQ_hg19.bed.png)  
 
 ### В полученных файлах отрезаем все пики длиннее 5000 оснований (filter.sh)  
-
+![alt text](pictures/len_hist_H3K4me1_HCT116_ENCFF699ABD_hg19_filtered.png)  
+![alt text](pictures/len_hist_H3K4me1_HCT116_ENCFF931YSQ_hg19_filtered.png)  
 ### Строим pie-чарты фильтрованных наборов с помощью ChIPseeker (chip_seeker.R)  
 
 ENCFF699ABD:  
 ![alt text](pictures/chip_seeker_H3K4me1_HCT116_ENCFF699ABD_hg19_filtered.bed_plotAnnoPie.png)  
 ENCFF931YSQ:  
-![alt text](pictures/chip_seeker_H3K4me1_HCT116_ENCFF931YSQ_hg19_filtered.bed_plotAnnoPie.png)
+![alt text](pictures/chip_seeker_H3K4me1_HCT116_ENCFF931YSQ_hg19_filtered.bed_plotAnnoPie.png)  
+
+### Сливаем 2 файла с метками в один
+```
+cat *_filtered.bed | sort -k1,1 -k2,2n > H3K4me1_HTC116_merged_hg19.bed  
+```
